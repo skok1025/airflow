@@ -4,7 +4,7 @@ import pendulum
 from airflow.operators.email import EmailOperator
 
 with DAG(
-    dag_id="dags_bash_select_fruit",
+    dag_id="dags_email_operator",
     schedule="10 0 * * 6#1",
     start_date=pendulum.datetime(2023, 3, 1, tz="Asia/Seoul"),
     catchup=False,
